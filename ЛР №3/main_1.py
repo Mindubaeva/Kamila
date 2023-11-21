@@ -1,7 +1,7 @@
-# TODO Напишите функцию для поиска индекса товара
 def search_(list_items, i):
-    if i in list_items:
-        return list_items.index(i)
+   for position, name in enumerate(list_items):
+       if name == i:
+            return position
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
 
