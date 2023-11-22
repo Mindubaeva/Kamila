@@ -1,3 +1,12 @@
+# TODO  Напишите функцию count_letters
+def count_letters(text):
+    letters = {}
+    lowercase_text = text.lower()
+    for char in lowercase_text:
+        if char.isalpha():
+            letters[char] = letters.setdefault(char, 0) + 1
+    return letters
+# TODO Напишите функцию calculate_frequency
 def calculate_frequency(letters):
     total_count = sum(letters.values())
     frequencies = {}
